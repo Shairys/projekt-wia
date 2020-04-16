@@ -1,7 +1,13 @@
 body{
     padding: 0px;
     margin: 0px;
+    height: 20000px;
+    background-image: url('https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/67407203_865924733806067_8335026573585416192_n.png?_nc_cat=106&_nc_sid=b96e70&_nc_oc=AQkUTF-XQn3DSjrSs9CFikVsUHUF2reoldBgVj5Ovz5FUxBjQvO6CJJ6qNkPAEFF2Fk&_nc_ht=scontent-waw1-1.xx&oh=4dacbfeef95dddec62cd202f2efe8a5b&oe=5EBD70A5');
+    background-repeat: repeat-y;
+    background-size: 100% auto
 }
+
+
 
 #navbar{
     background-color: #0072c2;
@@ -14,7 +20,7 @@ body{
 
 #video > iframe{
     width: 100%;
-    height: 100%;
+    height: 1080px;
     filter: brightness(50%);
 }
 
