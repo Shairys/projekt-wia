@@ -24,10 +24,10 @@ body{
 #navbar{
     background-color: #0072c2;
     min-height: 200px;
-    max-height: 400px;
     width: 100%;
     padding-top: 20px;
     padding-left: 20px;
+    display:inline-block;
 
 }
 
@@ -44,6 +44,7 @@ body{
 #links{
     float: right;
     margin-right: 30px;
+    
 }
 
 .shortcut{
