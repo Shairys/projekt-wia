@@ -39,7 +39,20 @@ body{
 }
 
 #logo{
-     float: left;
+    float: left;
+    font-size: 150px;
+    color: #444953;
+    letter-spacing: -10px;
+    line-height: ;
+}
+#logo span{
+    color: rgb(28, 176, 221);
+}
+
+#logo img{
+    height: 150px;
+    float: right;
+    
 }
 
 #links{
