@@ -151,7 +151,8 @@ a:hover, #backToTop:hover{
 }
 
 #select{
-    margin-top: 23px;
+    padding-bottom: 23px;
+    margin-top: 100px;
 }
 
 #first-article, #second-article, #third-article{
@@ -167,4 +168,9 @@ a:hover, #backToTop:hover{
 #second-article{
     left: 2000px;
 
+}
+
+#presentation{
+    background-color: white;
+    border-radius: 25px;
 }
