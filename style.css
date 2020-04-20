@@ -7,8 +7,9 @@ body{
     
 }
 
-a:hover{
-    cursor: url('images/cursor%20hover.svg'), auto;
+
+a:hover, #backToTop:hover{
+    cursor: url('images/cursor%20hover.svg'), pointer;
 }
 
 
@@ -22,9 +23,9 @@ a:hover{
     border: 3px solid black;
     background-color: teal;
     z-index: 30;
+    height: 40px;
 }
 #backToTop:hover{
-    cursor: pointer;
     opacity: 0.8;
 }
 
@@ -151,4 +152,19 @@ a:hover{
 
 #select{
     margin-top: 23px;
+}
+
+#first-article, #second-article, #third-article{
+    transition: 0.3s ease-in;
+    position: relative;
+    visibility: hidden;
+}
+
+#first-article, #third-article{
+    left: -2000px;
+}
+
+#second-article{
+    left: 2000px;
+
 }
