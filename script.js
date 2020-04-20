@@ -27,12 +27,20 @@ window.onload = function(){
             setTimeout(function(){document.querySelector("#third-article").style.left = 0;},100);
         }
     }
-
+    
+    function makeVisible(){
+        this.style.opacity = 1;
+    }
+    
+    var grid = document.querySelectorAll(".grid");
+    for(var v = 0; v < grid.length; v++){
+        grid[v].addEventListener('mouseover', makeVisible);
+    }
     window.addEventListener('scroll', showButton);
     window.addEventListener('scroll', animationSlide);
     document.querySelector("#backToTop").addEventListener('click', function(){
         window.scrollBy(0, -window.pageYOffset); //scrolluje w górę o offsetY strony
     });
-
+    
 
 }

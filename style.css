@@ -1,5 +1,5 @@
 body{
-
+    height: 20000px;
     cursor: url('images/cursor.svg'), auto;
     overflow-x: hidden;
 }
@@ -155,9 +155,7 @@ a:hover, #backToTop:hover{
     margin-top: 30px;
 }
 
-#select img{
-    width: 33.33%;
-}
+
 
 #first-article, #second-article, #third-article{
     transition: 0.3s ease-in;
@@ -172,4 +170,15 @@ a:hover, #backToTop:hover{
 #second-article{
     right: -2000px;
 
+}
+
+.grid{
+    opacity: 0;
+    transition: 1s ease-in;
+    width: 25%;
+}
+
+.gridbox{
+    width: 33.3%;
+    float: left;
 }
