@@ -43,9 +43,10 @@ window.onload = function(){
     }
     
     var counter = [0,0,0];
-    var maxGrid = 16;
+    var maxGrid = 15;
     function makeVisible(){
-        this.style.opacity = 0.8;
+        if(this.style.opacity > 0) return;
+        this.style.opacity = 0.7;
         if(this.classList.contains("grid1")){
             counter[0]++;
             if(counter[0] == maxGrid)
