@@ -3,6 +3,12 @@ body{
     background-image: url('https://archive-media-1.nyafuu.org/wg/image/1519/83/1519835596717.jpg');
     background-repeat: repeat-y;
     background-size: 100% auto;
+    cursor: url('images/cursor.svg'), auto;
+    
+}
+
+a:hover{
+    cursor: url('images/cursor%20hover.svg'), auto;
 }
 
 
@@ -31,9 +37,16 @@ body{
     display:inline-block;
 
 }
+#video{
+    text-align: center;
+}
 
 #video > iframe{
     width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    max-height: 1080px;
+    display: inline-block;
     height: 1080px;
     filter: brightness(50%);
 }
