@@ -113,7 +113,7 @@ a:hover, #backToTop:hover{
     float: left;
 }
 
-.article:nth-of-type(3) > img{
+#second-article img{
     float: right;
 }
 
