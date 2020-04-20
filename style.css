@@ -8,18 +8,27 @@ a:hover, #backToTop:hover{
     cursor: url('images/cursor%20hover.svg'), pointer;
 }
 
+a div.gridbox:hover{
+    cursor: url('images/cursor.svg'), auto;
+}
+a div.gridbox img.complete:hover{
+    cursor: url('images/cursor%20hover.svg'), pointer;
+}
+
+a div.complete:hover{
+    border-bottom: 5px solid #C1C8E4;
+}
 
 
 #backToTop{
     position: fixed;
     right: 15px;
-    bottom: 15px;
+    bottom: 20px;
+    border-radius: 50%;
     text-align: center;
     display: none;
-    border: 3px solid black;
-    background-color: teal;
+    border: 3px solid red;
     z-index: 30;
-    height: 40px;
 }
 
 #navbar{

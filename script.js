@@ -9,7 +9,6 @@ window.onload = function(){
             button.style.display = "block";
         else
             button.style.display = "none";
-        button.querySelector("p").innerHTML = offset;
     }
     
     function animationSlide(){
@@ -30,12 +29,18 @@ window.onload = function(){
     
     function complete(v){
         var grid;
-        if(v == 0)
+        if(v == 0){
             var grid = document.querySelectorAll(".grid1");
-        if(v == 1)
+            document.querySelectorAll(".gridbox")[0].classList.add("complete");
+        }
+        if(v == 1){
             var grid = document.querySelectorAll(".grid2");
-        if(v == 2)
-            var grid = document.querySelectorAll(".grid3");
+            document.querySelectorAll(".gridbox")[1].classList.add("complete");
+        }
+        if(v == 2){
+            var grid = document.querySelectorAll(".grid1");
+            document.querySelectorAll(".gridbox")[2].classList.add("complete");
+        }
         for(var v = 0; v < grid.length; v++){
             grid[v].classList.add("complete");
             grid[v].style.opacity = 1;
