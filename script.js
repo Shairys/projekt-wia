@@ -5,10 +5,10 @@ window.onload = function(){
     function showButton(){ //Pokazuje i chowa guzik podczas scrollowania
         var offset = this.pageYOffset; //Offset Y strony
         var button = document.querySelector("#backToTop");
-        if(offset > 350) 
-            button.style.display = "block";
+        if(offset > 1500) 
+            button.style.opacity = 1;
         else
-            button.style.display = "none";
+            button.style.opacity = 0;
     }
     
     function animationSlide(){
