@@ -28,8 +28,39 @@ window.onload = function(){
         }
     }
     
+    function complete(v){
+        var grid;
+        if(v == 0)
+            var grid = document.querySelectorAll(".grid1");
+        if(v == 1)
+            var grid = document.querySelectorAll(".grid2");
+        if(v == 2)
+            var grid = document.querySelectorAll(".grid3");
+        for(var v = 0; v < grid.length; v++){
+            grid[v].classList.add("complete");
+            grid[v].style.opacity = 1;
+        }
+    }
+    
+    var counter = [0,0,0];
+    var maxGrid = 16;
     function makeVisible(){
-        this.style.opacity = 1;
+        this.style.opacity = 0.8;
+        if(this.classList.contains("grid1")){
+            counter[0]++;
+            if(counter[0] == maxGrid)
+                complete(0);
+        }
+        if(this.classList.contains("grid2")){
+            counter[1]++;
+            if(counter[1] == maxGrid)
+                complete(1);
+        }
+        if(this.classList.contains("grid3")){
+            counter[2]++;
+            if(counter[2] == maxGrid)
+                complete(2);
+        }
     }
     
     var grid = document.querySelectorAll(".grid");

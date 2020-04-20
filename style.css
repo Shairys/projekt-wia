@@ -1,5 +1,4 @@
 body{
-    height: 20000px;
     cursor: url('images/cursor.svg'), auto;
     overflow-x: hidden;
 }
@@ -202,4 +201,8 @@ a:hover, #backToTop:hover{
 #presentation{
     max-width: 1920px;
     display: inline-block;
+}
+
+.complete{
+    opacity: 1;
 }
