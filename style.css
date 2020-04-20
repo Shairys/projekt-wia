@@ -28,7 +28,7 @@ a div.complete:hover{
     text-align: center;
     display: block;
     opacity: 0;
-    border: 3px solid red;
+    border: 5px solid #353580;`
     z-index: 30;
     transition: 1s ease-in;
 }

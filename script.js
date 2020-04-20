@@ -38,7 +38,7 @@ window.onload = function(){
             document.querySelectorAll(".gridbox")[1].classList.add("complete");
         }
         if(v == 2){
-            var grid = document.querySelectorAll(".grid1");
+            var grid = document.querySelectorAll(".grid3");
             document.querySelectorAll(".gridbox")[2].classList.add("complete");
         }
         for(var v = 0; v < grid.length; v++){
