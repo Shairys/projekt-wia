@@ -179,6 +179,27 @@ a:hover, #backToTop:hover{
 }
 
 .gridbox{
-    width: 33.3%;
     float: left;
+    width: 33.3%
+}
+
+.st{
+    width: 33.3%;
+}
+
+
+#select{
+    text-align: center;
+}
+
+.select-description{
+    font-size: 30px;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+#presentation{
+    max-width: 1920px;
+    display: inline-block;
 }
