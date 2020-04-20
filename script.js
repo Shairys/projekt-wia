@@ -51,7 +51,7 @@ window.onload = function(){
     var maxGrid = 15;
     function makeVisible(){
         if(this.style.opacity > 0) return;
-        this.style.opacity = 0.7;
+        this.style.opacity = 0.5;
         if(this.classList.contains("grid1")){
             counter[0]++;
             if(counter[0] == maxGrid)
