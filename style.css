@@ -1,10 +1,8 @@
 body{
     height: 20000px;
-    background-image: url('https://archive-media-1.nyafuu.org/wg/image/1519/83/1519835596717.jpg');
-    background-repeat: repeat-y;
-    background-size: 100% auto;
     cursor: url('images/cursor.svg'), auto;
-    
+    background-color: rgba(132, 206, 235, 0.49);
+    overflow-x: hidden;
 }
 
 
@@ -25,12 +23,9 @@ a:hover, #backToTop:hover{
     z-index: 30;
     height: 40px;
 }
-#backToTop:hover{
-    opacity: 0.8;
-}
 
 #navbar{
-    background-color: #0072c2;
+    background-color: #5680E9;
     min-height: 200px;
     width: 100%;
     padding-top: 20px;
@@ -83,18 +78,22 @@ a:hover, #backToTop:hover{
     opacity: 1;
 }
 
-.visible{
+.inverseVisibility{
     opacity: 1;
 }
 
+.inverseVisibility:hover{
+    opacity: 0.8;
+}
+
 #main{
-    background-color: white;
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 30px;
     border-radius: 25px;
     display: inline-block;
     position: relative;
+    background-color: #dedede;
 }
 
 .content{
@@ -102,6 +101,7 @@ a:hover, #backToTop:hover{
 }
 
 .article{
+    margin: 20px;
     margin-top: 100px;
     margin-bottom: 100px;
     min-height: 1000px;
@@ -111,10 +111,13 @@ a:hover, #backToTop:hover{
 
 .article > img{
     float: left;
+    margin-right: 15px;
 }
 
 #second-article img{
     float: right;
+    margin-right: 0px;
+    margin-left: 15px;
 }
 
 #footer{
@@ -123,6 +126,8 @@ a:hover, #backToTop:hover{
     background-color: black;
     bottom: -150px;
     position: absolute;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 #footer .shortcut{
@@ -135,6 +140,11 @@ a:hover, #backToTop:hover{
     width: 100px;
     height: 100px;
 }
+
+#footer a:first-of-type img{
+    width: 85px;
+}
+
 
 #footer .content{
     display: inline-block;
@@ -166,11 +176,11 @@ a:hover, #backToTop:hover{
 }
 
 #second-article{
-    left: 2000px;
+    right: -2000px;
 
 }
 
 #presentation{
-    background-color: white;
     border-radius: 25px;
+    background-color: #dedede;
 }

@@ -20,7 +20,7 @@ window.onload = function(){
         }
         if(offset >= 3000 && offset <= 4100){
             document.querySelector("#second-article").style.visibility = "visible";
-            setTimeout(function(){document.querySelector("#second-article").style.left = 0;},100);
+            setTimeout(function(){document.querySelector("#second-article").style.right = 0;},100);
         }
         if(offset >= 4300 && offset <= 5400){
             document.querySelector("#third-article").style.visibility = "visible";
