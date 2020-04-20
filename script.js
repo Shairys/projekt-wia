@@ -1,5 +1,6 @@
 window.onload = function(){
     
+    setTimeout(function(){document.querySelector("#backToTop").style.transition ="1s ease-in";},100)
     
     
     function showButton(){ //Pokazuje i chowa guzik podczas scrollowania

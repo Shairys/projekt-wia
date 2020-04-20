@@ -28,14 +28,13 @@ a div.complete:hover{
     text-align: center;
     display: block;
     opacity: 0;
-    border: 5px solid #353580;`
-    z-index: 30;
-    transition: 1s ease-in;
+    border: 5px solid #353580;
+    z-index: 100;
 }
 
 #navbar{
     background-color: #5680E9;
-    min-height: 200px;
+    min-height: 100px;
     width: 100%;
     padding-top: 20px;
     padding-left: 20px;
@@ -61,7 +60,8 @@ a div.complete:hover{
     font-size: 150px;
     color: #444953;
     letter-spacing: -10px;
-    line-height: ;
+    position: relative;
+    top: -10px;
 }
 #logo span{
     color: rgb(28, 176, 221);
@@ -190,16 +190,15 @@ a div.complete:hover{
 
 .gridbox{
     float: left;
-    width: 33.3%
-}
-
-.st{
     width: 33.3%;
 }
 
-
 #select{
     text-align: center;
+}
+
+#select{
+    margin-bottom: 600px;
 }
 
 .select-description{
