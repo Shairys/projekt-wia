@@ -14,17 +14,25 @@ window.onload = function(){
     
     function animationSlide(){
         var offset = this.pageYOffset;
-        if(offset >= 1900 && offset <= 3200){
+        if(offset >= 1600 && offset <= 2600){
             document.querySelector("#first-article").style.visibility = "visible";
             setTimeout(function(){document.querySelector("#first-article").style.left = 0;},100);
         }
-        if(offset >= 3000 && offset <= 4100){
+        if(offset >= 2800 && offset <= 3800){
             document.querySelector("#second-article").style.visibility = "visible";
             setTimeout(function(){document.querySelector("#second-article").style.right = 0;},100);
         }
-        if(offset >= 4300 && offset <= 5400){
+        if(offset >= 4000 && offset <= 5000){
             document.querySelector("#third-article").style.visibility = "visible";
             setTimeout(function(){document.querySelector("#third-article").style.left = 0;},100);
+        }
+        if(offset <= 700){
+            document.querySelector("#first-article").style.visibility = "hidden";
+            document.querySelector("#second-article").style.visibility = "hidden";
+            document.querySelector("#third-article").style.visibility = "hidden";
+            document.querySelector("#first-article").style.left = -2000;
+            document.querySelector("#second-article").style.right = -2000;
+            document.querySelector("#third-article").style.left = -2000;
         }
     }
     

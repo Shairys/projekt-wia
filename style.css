@@ -1,6 +1,7 @@
 body{
     cursor: url('images/cursor.svg'), auto;
     overflow-x: hidden;
+    min-height: 5900px;
 }
 
 
@@ -16,9 +17,8 @@ a div.gridbox img.complete:hover{
 }
 
 a div.complete:hover{
-    border-bottom: 5px solid #C1C8E4;
+    border-bottom: 5px solid  #C1C8E4;
 }
-
 
 #backToTop{
     position: fixed;
@@ -39,6 +39,7 @@ a div.complete:hover{
     padding-top: 20px;
     padding-left: 20px;
     display:inline-block;
+    position: relative;
 
 }
 #video{
@@ -70,12 +71,6 @@ a div.complete:hover{
 #logo img{
     height: 150px;
     float: right;
-    
-}
-
-#links{
-    float: right;
-    margin-right: 30px;
     
 }
 
@@ -139,6 +134,7 @@ a div.complete:hover{
     border-bottom-right-radius: 25px;
 }
 
+
 #footer .shortcut{
     margin-left: 30px;
     margin-top: 30px;
@@ -159,10 +155,11 @@ a div.complete:hover{
     display: inline-block;
     color: white;
     float: right;
-
+    text-align: right;
     width: 60%;
     font-size: 24px;
     margin-top: 30px;
+    margin-right: 15px;
 }
 
 
@@ -173,13 +170,21 @@ a div.complete:hover{
     visibility: hidden;
 }
 
+#first-article img, #second-article img, #third-article img{
+    height: 1000px;
+}
+
 #first-article, #third-article{
     left: -2000px;
 }
 
 #second-article{
     right: -2000px;
+    text-align: center;
+}
 
+#second-article div.content{
+    margin-top: 20px;
 }
 
 .grid{
@@ -194,14 +199,13 @@ a div.complete:hover{
 }
 
 #select{
-    text-align: center;
-}
-
-#select{
-    margin-bottom: 600px;
+    margin-top: 50px;
+    display: inline-block;
+    height: 630px;
 }
 
 .select-description{
+    margin-top: 30px;
     font-size: 30px;
     float: left;
     width: 33.33%;
@@ -209,6 +213,7 @@ a div.complete:hover{
 }
 
 #presentation{
+    box-sizing: border-box;
     max-width: 1920px;
     display: inline-block;
 }
