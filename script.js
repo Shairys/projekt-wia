@@ -82,15 +82,20 @@ window.onload = function(){
     for(var v = 0; v < grid.length; v++){
         grid[v].addEventListener('mouseover', makeVisible);
     }
+    
+    
     window.addEventListener('scroll', showButton);
     window.addEventListener('scroll', animationSlide);
     document.querySelector("#backToTop").addEventListener('click', function(){
         window.scrollBy(0, -window.pageYOffset); //scrolluje w górę o offsetY strony
     });
+    
+    
     var audio = document.getElementsByTagName("audio")[0];
     var firstArt = document.querySelector("#first-article img");
     var secondArt = document.querySelector("#second-article img");
     var thirdArt = document.querySelector("#third-article img");
+    
     firstArt.addEventListener('mouseover', function(){
         firstArt.src = "images/cis12.png";
         audio.play();
