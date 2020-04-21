@@ -87,6 +87,12 @@ window.onload = function(){
     document.querySelector("#backToTop").addEventListener('click', function(){
         window.scrollBy(0, -window.pageYOffset); //scrolluje w górę o offsetY strony
     });
-    
+    var secondArt = document.querySelector("#second-article img")
+    secondArt.addEventListener('mouseover', function(){
+        secondArt.src = "images/musz12.png";
+    })
+    secondArt.addEventListener('mouseout', function(){
+        secondArt.src = "images/musz11.png";
+    })
 
 }
